@@ -1,1 +1,2 @@
-Adding this text in new file to test push operation
+Adding this text in new file to test push operation.
+Making some changes in the first file.n
