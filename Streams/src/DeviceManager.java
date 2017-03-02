@@ -64,6 +64,15 @@ public class DeviceManager {
                 .map(Device::getManufacturer)
                 .findFirst()
                 .get();
-
     }
+    public String getSecondMostExpensiveLaptopManufacturer(){
+        return devices.stream()
+                .filter(device -> device.getType().equals(TYPE.LAPTOP))
+                .sorted((d1,d2) -> Float.compare(d2.getPrice(),d1.getPrice()))
+                .skip(1)
+                .map(Device::getManufacturer)
+                .findFirst()
+                .get();
+    }
+
 }

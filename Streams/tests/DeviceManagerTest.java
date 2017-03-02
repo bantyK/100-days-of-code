@@ -4,6 +4,7 @@ import org.junit.Test;
 import java.util.Arrays;
 import java.util.List;
 
+import static com.sun.xml.internal.ws.dump.LoggingDumpTube.Position.Before;
 import static org.junit.Assert.*;
 
 /**
@@ -105,5 +106,14 @@ public class DeviceManagerTest {
     public void testGetCheapestTabletManufacturer() throws Exception {
         String cheapestTabletManufacturer = manager.getCheapestTabletManufacturer();
         assertEquals("XIOMI",cheapestTabletManufacturer);
+    }
+
+    @Test
+    public void testGetSecondMostExpensiveLaptopManufacturer() throws Exception {
+        String secondMostExpensiveLaptopManufacturer =
+                manager.getSecondMostExpensiveLaptopManufacturer();
+
+        assertEquals("DELL",secondMostExpensiveLaptopManufacturer);
+
     }
 }
