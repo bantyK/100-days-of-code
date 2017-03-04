@@ -1,5 +1,4 @@
 import java.util.List;
-import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 /**
@@ -90,5 +89,12 @@ public class DeviceManager {
                 .filter(device -> device.getManufacturer().equals("APPLE"))
                 .findAny()
                 .ifPresent(device -> System.out.print(device.getManufacturer()));
+    }
+
+    public int getNumberOfDevices(){
+        return devices.stream()
+                .map(device -> 1)
+                .reduce((total,device) -> total+device)
+                .get();
     }
 }

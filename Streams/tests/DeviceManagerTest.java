@@ -127,4 +127,11 @@ public class DeviceManagerTest {
     public void testCheckIfThereisApplePhoneOrReturnSamsungPhone() throws Exception {
         manager.getAppleDeviceifPresentElseSamsungDevice();
     }
+
+    @Test
+    public void testGetNumberOfDevices() throws Exception {
+        int actual = manager.getNumberOfDevices();
+        assertEquals(15, actual);
+
+    }
 }

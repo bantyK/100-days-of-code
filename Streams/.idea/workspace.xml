@@ -2,14 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c327d28c-35f1-4a74-bda1-5f273cb0676e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ReduceOperations.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Trader.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Transaction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TransactionManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/ReduceOperationsTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/TransactionManagerTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Streams/DeviceManager.class" afterPath="$PROJECT_DIR$/out/production/Streams/DeviceManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Streams/StreamExamples.class" afterPath="$PROJECT_DIR$/out/production/Streams/StreamExamples.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/Streams/DeviceManagerTest.class" afterPath="$PROJECT_DIR$/out/test/Streams/DeviceManagerTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DeviceManager.java" afterPath="$PROJECT_DIR$/src/DeviceManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/StreamExamples.java" afterPath="$PROJECT_DIR$/src/StreamExamples.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/DeviceManagerTest.java" afterPath="$PROJECT_DIR$/tests/DeviceManagerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/StreamExamplesTest.java" afterPath="$PROJECT_DIR$/tests/StreamExamplesTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,21 +32,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DeviceManager.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/DeviceManager.java">
+      <file leaf-file-name="Transaction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Transaction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="90" column="26" lean-forward="true" selection-start-line="90" selection-start-column="26" selection-end-line="90" selection-end-column="26" />
-              <folding />
+            <state relative-caret-position="651">
+              <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+              <folding>
+                <element signature="e#342#343#0" expanded="true" />
+                <element signature="e#371#372#0" expanded="true" />
+                <element signature="e#399#400#0" expanded="true" />
+                <element signature="e#426#427#0" expanded="true" />
+                <element signature="e#455#456#0" expanded="true" />
+                <element signature="e#483#484#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DeviceManagerTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/DeviceManagerTest.java">
+      <file leaf-file-name="TransactionManager.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/TransactionManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="127" column="59" lean-forward="false" selection-start-line="127" selection-start-column="59" selection-end-line="127" selection-end-column="59" />
+            <state relative-caret-position="378">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TransactionManagerTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/TransactionManagerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="555">
+              <caret line="37" column="51" lean-forward="true" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,6 +74,14 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit4 Test Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -65,8 +96,15 @@
       <list>
         <option value="$PROJECT_DIR$/src/StreamExamples.java" />
         <option value="$PROJECT_DIR$/tests/StreamExamplesTest.java" />
-        <option value="$PROJECT_DIR$/tests/DeviceManagerTest.java" />
+        <option value="$PROJECT_DIR$/tests/ReduceOperationsTest.java" />
+        <option value="$PROJECT_DIR$/src/ReduceOperations.java" />
         <option value="$PROJECT_DIR$/src/DeviceManager.java" />
+        <option value="$PROJECT_DIR$/tests/DeviceManagerTest.java" />
+        <option value="$PROJECT_DIR$/tests/Trader.java" />
+        <option value="$PROJECT_DIR$/src/Trader.java" />
+        <option value="$PROJECT_DIR$/src/Transaction.java" />
+        <option value="$PROJECT_DIR$/tests/TransactionManagerTest.java" />
+        <option value="$PROJECT_DIR$/src/TransactionManager.java" />
       </list>
     </option>
   </component>
@@ -142,92 +180,21 @@
   <component name="PropertiesComponent">
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="SearchEverywhereHistoryKey" value="St&#9;FILE&#9;file://D:/Programs/Java/100-days-of-code/Streams/tests/StreamExamplesTest.java&#10;Dev&#9;PSI&#9;JAVA://DeviceManagerTest&#10;Strea&#9;PSI&#9;JAVA://StreamExamplesTest" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
   </component>
-  <component name="RunManager" selected="JUnit.DeviceManagerTest.testCheckIfThereisApplePhoneOrReturnSamsungPhone">
-    <configuration default="false" name="DeviceManagerTest.testGetSecondMostExpensiveLaptopManufacturer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="Streams" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DeviceManagerTest" />
-      <option name="METHOD_NAME" value="testGetSecondMostExpensiveLaptopManufacturer" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="DeviceManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="Streams" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DeviceManagerTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="StreamExamplesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="Streams" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StreamExamplesTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="DeviceManagerTest.testGelAllSamsungDevices" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="Streams" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DeviceManagerTest" />
-      <option name="METHOD_NAME" value="testGelAllSamsungDevices" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TransactionManagerTest.testGetTransactionsin2011SortedByValue">
     <configuration default="false" name="DeviceManagerTest.testCheckIfThereisApplePhoneOrReturnSamsungPhone" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Streams" />
@@ -236,6 +203,90 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="DeviceManagerTest" />
       <option name="METHOD_NAME" value="testCheckIfThereisApplePhoneOrReturnSamsungPhone" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ReduceOperationsTest.testAddOnlyEvenNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="Streams" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ReduceOperationsTest" />
+      <option name="METHOD_NAME" value="testAddOnlyEvenNumbers" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ReduceOperationsTest.testGetMaximumNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="Streams" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ReduceOperationsTest" />
+      <option name="METHOD_NAME" value="testGetMaximumNumber" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="DeviceManagerTest.testGetNumberOfDevices" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="Streams" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DeviceManagerTest" />
+      <option name="METHOD_NAME" value="testGetNumberOfDevices" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TransactionManagerTest.testGetTransactionsin2011SortedByValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="Streams" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TransactionManagerTest" />
+      <option name="METHOD_NAME" value="testGetTransactionsin2011SortedByValue" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -454,19 +505,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.DeviceManagerTest.testGetSecondMostExpensiveLaptopManufacturer" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.DeviceManagerTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.StreamExamplesTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.DeviceManagerTest.testGelAllSamsungDevices" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.DeviceManagerTest.testCheckIfThereisApplePhoneOrReturnSamsungPhone" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.DeviceManagerTest.testCheckIfThereisApplePhoneOrReturnSamsungPhone" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ReduceOperationsTest.testAddOnlyEvenNumbers" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ReduceOperationsTest.testGetMaximumNumber" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.DeviceManagerTest.testGetNumberOfDevices" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TransactionManagerTest.testGetTransactionsin2011SortedByValue" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.DeviceManagerTest.testCheckIfThereisApplePhoneOrReturnSamsungPhone" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.DeviceManagerTest.testGelAllSamsungDevices" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.StreamExamplesTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.DeviceManagerTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.DeviceManagerTest.testGetSecondMostExpensiveLaptopManufacturer" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TransactionManagerTest.testGetTransactionsin2011SortedByValue" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.DeviceManagerTest.testGetNumberOfDevices" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.DeviceManagerTest.testCheckIfThereisApplePhoneOrReturnSamsungPhone" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ReduceOperationsTest.testGetMaximumNumber" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ReduceOperationsTest.testAddOnlyEvenNumbers" />
       </list>
     </recent_temporary>
   </component>
@@ -487,20 +538,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DeviceManagerTest - 2017.03.04 at 10h 56m 19s.xml">
-      <configuration name="DeviceManagerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DeviceManagerTest_testCheckIfThereisApplePhoneOrReturnSamsungPhone - 2017.03.04 at 14h 13m 13s.xml">
+    <history-entry file="DeviceManagerTest_testCheckIfThereisApplePhoneOrReturnSamsungPhone - 2017.03.04 at 14h 39m 28s.xml">
       <configuration name="DeviceManagerTest.testCheckIfThereisApplePhoneOrReturnSamsungPhone" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DeviceManagerTest_testGelAllSamsungDevices - 2017.03.04 at 14h 04m 08s.xml">
-      <configuration name="DeviceManagerTest.testGelAllSamsungDevices" configurationId="JUnit" />
+    <history-entry file="DeviceManagerTest_testCheckIfThereisApplePhoneOrReturnSamsungPhone - 2017.03.04 at 14h 39m 43s.xml">
+      <configuration name="DeviceManagerTest.testCheckIfThereisApplePhoneOrReturnSamsungPhone" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DeviceManagerTest_testGetSecondMostExpensiveLaptopManufacturer - 2017.03.03 at 00h 01m 39s.xml">
-      <configuration name="DeviceManagerTest.testGetSecondMostExpensiveLaptopManufacturer" configurationId="JUnit" />
+    <history-entry file="DeviceManagerTest_testGetNumberOfDevices - 2017.03.04 at 14h 41m 53s.xml">
+      <configuration name="DeviceManagerTest.testGetNumberOfDevices" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StreamExamplesTest - 2017.03.04 at 14h 03m 52s.xml">
-      <configuration name="StreamExamplesTest" configurationId="JUnit" />
+    <history-entry file="ReduceOperationsTest_testAddOnlyEvenNumbers - 2017.03.04 at 14h 22m 18s.xml">
+      <configuration name="ReduceOperationsTest.testAddOnlyEvenNumbers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ReduceOperationsTest_testAddUsingReduce - 2017.03.04 at 14h 20m 05s.xml">
+      <configuration name="ReduceOperationsTest.testAddUsingReduce" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ReduceOperationsTest_testGetMaximumNumber - 2017.03.04 at 14h 28m 02s.xml">
+      <configuration name="ReduceOperationsTest.testGetMaximumNumber" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ReduceOperationsTest_testGetMaximumNumber - 2017.03.04 at 14h 28m 34s.xml">
+      <configuration name="ReduceOperationsTest.testGetMaximumNumber" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ReduceOperationsTest_testGetMaximumNumber - 2017.03.04 at 14h 28m 54s.xml">
+      <configuration name="ReduceOperationsTest.testGetMaximumNumber" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TransactionManagerTest_testGetTransactionsin2011SortedByValue - 2017.03.04 at 23h 54m 59s.xml">
+      <configuration name="TransactionManagerTest.testGetTransactionsin2011SortedByValue" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TransactionManagerTest_testGetTransactionsin2011SortedByValue - 2017.03.04 at 23h 57m 00s.xml">
+      <configuration name="TransactionManagerTest.testGetTransactionsin2011SortedByValue" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -513,8 +579,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -603,21 +669,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/DeviceManagerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/ReduceOperations.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="127" column="59" lean-forward="false" selection-start-line="127" selection-start-column="59" selection-end-line="127" selection-end-column="59" />
+        <state relative-caret-position="462">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/ReduceOperationsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="35" column="28" lean-forward="false" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/DeviceManagerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="132" column="29" lean-forward="false" selection-start-line="132" selection-start-column="29" selection-end-line="132" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Trader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+          <folding>
+            <element signature="e#259#260#0" expanded="true" />
+            <element signature="e#286#287#0" expanded="true" />
+            <element signature="e#317#318#0" expanded="true" />
+            <element signature="e#344#345#0" expanded="true" />
+            <element signature="e#390#391#0" expanded="true" />
+            <element signature="e#467#468#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/DeviceManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="90" column="26" lean-forward="true" selection-start-line="90" selection-start-column="26" selection-end-line="90" selection-end-column="26" />
+        <state relative-caret-position="429">
+          <caret line="93" column="14" lean-forward="false" selection-start-line="93" selection-start-column="14" selection-end-line="93" selection-end-column="14" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Transaction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+          <folding>
+            <element signature="e#342#343#0" expanded="true" />
+            <element signature="e#371#372#0" expanded="true" />
+            <element signature="e#399#400#0" expanded="true" />
+            <element signature="e#426#427#0" expanded="true" />
+            <element signature="e#455#456#0" expanded="true" />
+            <element signature="e#483#484#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/TransactionManagerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="51" lean-forward="true" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TransactionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
