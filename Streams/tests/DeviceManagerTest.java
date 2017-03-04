@@ -116,4 +116,15 @@ public class DeviceManagerTest {
         assertEquals("DELL",secondMostExpensiveLaptopManufacturer);
 
     }
+
+    @Test
+    public void testGelAllSamsungDevices() throws Exception {
+        List<Device> samsungDevices = manager.getAllSamsungDevices();
+        assertEquals(3,samsungDevices.size());
+    }
+
+    @Test
+    public void testCheckIfThereisApplePhoneOrReturnSamsungPhone() throws Exception {
+        manager.getAppleDeviceifPresentElseSamsungDevice();
+    }
 }

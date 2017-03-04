@@ -1,4 +1,5 @@
 import java.util.List;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 /**
@@ -50,7 +51,7 @@ public class DeviceManager {
     public Device getMostExpensiveMobile() {
         return devices.stream()
                 .filter(device -> device.getType().equals(TYPE.MOBILE))
-                .sorted((d1,d2) -> Float.compare(d2.getPrice(),d1.getPrice()))
+                .sorted((d1, d2) -> Float.compare(d2.getPrice(), d1.getPrice()))
                 .limit(1)
                 .findFirst()
                 .get();
@@ -59,20 +60,35 @@ public class DeviceManager {
     public String getCheapestTabletManufacturer() {
         return devices.stream()
                 .filter(device -> device.getType().equals(TYPE.TABLET))
-                .sorted((d1,d2) ->Float.compare(d1.getPrice(),d2.getPrice()))
+                .sorted((d1, d2) -> Float.compare(d1.getPrice(), d2.getPrice()))
                 .limit(1)
                 .map(Device::getManufacturer)
                 .findFirst()
                 .get();
     }
-    public String getSecondMostExpensiveLaptopManufacturer(){
+
+    public String getSecondMostExpensiveLaptopManufacturer() {
         return devices.stream()
                 .filter(device -> device.getType().equals(TYPE.LAPTOP))
-                .sorted((d1,d2) -> Float.compare(d2.getPrice(),d1.getPrice()))
+                .sorted((d1, d2) -> Float.compare(d2.getPrice(), d1.getPrice()))
                 .skip(1)
                 .map(Device::getManufacturer)
                 .findFirst()
                 .get();
     }
 
+    public List<Device> getAllSamsungDevices() {
+        return devices.stream()
+                .filter(device -> device.getManufacturer().equals("SAMSUNG"))
+                .collect(Collectors.toList());
+
+
+    }
+
+    public void getAppleDeviceifPresentElseSamsungDevice() {
+        devices.stream()
+                .filter(device -> device.getManufacturer().equals("APPLE"))
+                .findAny()
+                .ifPresent(device -> System.out.print(device.getManufacturer()));
+    }
 }
