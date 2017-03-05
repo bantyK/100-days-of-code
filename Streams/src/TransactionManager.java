@@ -85,4 +85,10 @@ public class TransactionManager {
 //                .get();
     }
 
+    public int getLowestTransactionValue() {
+        return transactions.stream()
+                .map(Transaction::getValue)
+                .reduce(Integer::min)
+                .get();
+    }
 }

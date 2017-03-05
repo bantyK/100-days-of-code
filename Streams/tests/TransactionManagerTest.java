@@ -110,4 +110,12 @@ public class TransactionManagerTest {
         assertEquals(1000, highestTransactinValue);
 
     }
+
+    @Test
+    public void testGetLowestTransactionValue() throws Exception {
+        int highestTransactinValue = transactionManager.getLowestTransactionValue();
+
+        assertEquals(300, highestTransactinValue);
+
+    }
 }
