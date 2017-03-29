@@ -5,7 +5,6 @@ import org.jetbrains.annotations.Nullable;
  */
 public class SeatingArrangement {
 
-    @Nullable
     public static Boolean[][] initializeSeats(int showNumber) {
         Boolean[][] seats = new Boolean[3][9];
 

@@ -6,32 +6,35 @@ import static org.junit.Assert.*;
 /**
  * Created by Banty on 30/03/17.
  */
-public class TheatreTest {
-    Theatre theatre;
+public class ShowTest {
+    Show show1;
+    Show show2;
+    Show show3;
 
     @Before
     public void setUp() throws Exception {
-        theatre = new Theatre();
+        show1 = new Show(1);
+        show2 = new Show(2);
+        show3 = new Show(3);
     }
 
     @Test
     public void shouldReturnCorrectSeatingArrangementAccordingToShowNumber() throws Exception {
-        theatre.setShowNumber(1);
-        Boolean[][] seats1 = theatre.createSeatsAccordingToShowNumber(1);
+        Boolean[][] seats1 = show1.getAvailableSeatsForShow();
         assertEquals(3,seats1.length);
 
         assertTrue(seats1[0][1]);
         assertFalse(seats1[1][6]);
         assertFalse(seats1[1][8]);
 
-        Boolean[][] seats2 = theatre.createSeatsAccordingToShowNumber(2);
+        Boolean[][] seats2 = show2.getAvailableSeatsForShow();
         assertTrue(seats2[1][5]);
         assertFalse(seats2[1][8]);
         assertFalse(seats2[1][0]);
         assertFalse(seats2[2][8]);
 
 
-        Boolean[][] seats3 = theatre.createSeatsAccordingToShowNumber(3);
+        Boolean[][] seats3 = show3.getAvailableSeatsForShow();
         assertFalse(seats3[0][5]);
         assertFalse(seats3[1][8]);
         assertTrue(seats3[2][8]);
@@ -39,11 +42,11 @@ public class TheatreTest {
 
     @Test
     public void shouldReturnNullWhenSeatNumberisInvalid() throws Exception {
-        assertNull(theatre.createSeatsAccordingToShowNumber(0));
-        assertNull(theatre.createSeatsAccordingToShowNumber(4));
-        assertNotNull(theatre.createSeatsAccordingToShowNumber(1));
-        assertNotNull(theatre.createSeatsAccordingToShowNumber(2));
-        assertNotNull(theatre.createSeatsAccordingToShowNumber(3));
+        Show show4 = new Show(4);
+        assertNull(show4.getAvailableSeatsForShow());
+        assertNotNull(show1.getAvailableSeatsForShow());
+        assertNotNull(show2.getAvailableSeatsForShow());
+        assertNotNull(show3.getAvailableSeatsForShow());
 
     }
 }
