@@ -53,8 +53,8 @@ public class Theatre {
         if(show.checkIfSeatsAreAvailable(seats)){
             for(String seat : seats) {
                 show.bookTicket(seat);
-                createAndAddBill(showNumber, seat);
             }
+            createAndAddBill(showNumber, seats);
             return true;
         } else {
             show.printSeatingArrangement();
@@ -85,9 +85,9 @@ public class Theatre {
         return show3;
     }
 
-    public void createAndAddBill(int showNumber, String seat) {
+    public void createAndAddBill(int showNumber, String[] seats) {
         Bill bill = new Bill(getShow(showNumber));
-        bill.calculateBill(seat);
+        bill.calculateBill(seats);
         printBill(bill);
         Bills.add(bill);
     }

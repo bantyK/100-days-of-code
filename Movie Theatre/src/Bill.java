@@ -16,24 +16,27 @@ public class Bill {
     }
 
 
-    public void calculateBill(String seat) {
-        calculateBaseCost(seat);
-        calculateServiceTax();
-        calculateSwatchBharatTax();
-        calculateKrishiKalyanTax();
+    public void calculateBill(String[] seats) {
+        for(String seat : seats) {
+            calculateBaseCost(seat);
+        }
+            calculateServiceTax();
+            calculateSwatchBharatTax();
+            calculateKrishiKalyanTax();
+
 
     }
 
     private void calculateKrishiKalyanTax() {
-        swatchBharatTax = 0.005 * baseTicketCost;
+        krishiKalyanTax += 0.005 * baseTicketCost;
     }
 
     private void calculateSwatchBharatTax() {
-        swatchBharatTax = 0.005 * baseTicketCost;
+        swatchBharatTax += 0.005 * baseTicketCost;
     }
 
     private void calculateServiceTax() {
-        serviceTax = baseTicketCost * 0.14;
+        serviceTax += baseTicketCost * 0.14;
     }
 
     private double calculateBaseCost(String seat) {
@@ -45,13 +48,13 @@ public class Bill {
     private double getBasePriceForRow(int row) {
         if (row == 0) {
             //platinum row
-            return 320;
+            return baseTicketCost += 320;
         } else if (row == 1) {
             //gold row
-            return 280;
+            return baseTicketCost += 280;
         } else {
             //silver row
-            return 240;
+            return baseTicketCost += 240;
         }
     }
 
