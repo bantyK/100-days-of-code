@@ -28,18 +28,18 @@ public class Theatre {
             totalKrishiKalyanTax += bill.getKrishiKalyanTax();
         }
         System.out.println("Total Sales");
-        System.out.println("Revenue: Rs. "+totalBaseCost);
-        System.out.println("Service Tax: Rs. "+totalServiceTax);
-        System.out.println("Swachh Bharat Tax: Rs "+totalSwatchBharatTax);
-        System.out.println("Krishi Kalyan Cess: Rs. "+totalKrishiKalyanTax);
+        System.out.println(String.format("Revenue: Rs. " + totalBaseCost));
+        System.out.println(String.format("Service Tax: Rs. %.2f", totalServiceTax));
+        System.out.println(String.format("Swachh Bharat Tax: Rs. %.2f ", totalSwatchBharatTax));
+        System.out.println(String.format("Krishi Kalyan Cess: Rs. %.2f", totalKrishiKalyanTax));
     }
 
     public void printBill(Bill bill) {
 
         System.out.println("Sub Total: Rs. " + bill.getBaseTicketCost());
-        System.out.println("Service Tax:Rs. " + bill.getServiceTax());
-        System.out.println("Swachh Bharat Cess: Rs. " + bill.getSwatchBharatTax());
-        System.out.println("Krishi Kalyan Cess: Rs. " + bill.getKrishiKalyanTax());
+        System.out.println(String.format("Service Tax: Rs. %.2f", bill.getServiceTax()));
+        System.out.println(String.format("Swachh Bharat Cess: Rs. %.2f", bill.getSwatchBharatTax()));
+        System.out.println(String.format("Krishi Kalyan Cess: Rs. %.2f", bill.getKrishiKalyanTax()));
     }
 
     public void initShow() {
@@ -50,8 +50,8 @@ public class Theatre {
 
     public boolean bookShow(int showNumber, String[] seats) {
         Show show = getShow(showNumber);
-        if(show.checkIfSeatsAreAvailable(seats)){
-            for(String seat : seats) {
+        if (show.checkIfSeatsAreAvailable(seats)) {
+            for (String seat : seats) {
                 show.bookTicket(seat);
             }
             createAndAddBill(showNumber, seats);
@@ -97,6 +97,6 @@ public class Theatre {
         int showNumber = scanner.nextInt();
         System.out.println("Enter seats: ");
         String ticketNumbers = scanner.next();
-        bookShow(showNumber,ticketNumbers.split(","));
+        bookShow(showNumber, ticketNumbers.split(","));
     }
 }
