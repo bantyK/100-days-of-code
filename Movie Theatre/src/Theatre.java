@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  * Created by Banty on 30/03/17.
@@ -9,31 +10,36 @@ public class Theatre {
     private double totalSwatchBharatTax = 0;
     private double totalKrishiKalyanTax = 0;
 
-    private ArrayList<Customer> customers = new ArrayList<>();
+    private ArrayList<Bill> Bills = new ArrayList<>();
+
+    Scanner scanner = new Scanner(System.in);
 
     private Show show1, show2, show3;
 
     public Theatre() {
-        this.show1 = new Show(1);
-        this.show2 = new Show(2);
-        this.show3 = new Show(3);
+        initShow();
     }
 
-    public void calculateTotalRevenueWithTaxes() {
-        for (Customer customer : customers) {
-            totalBaseCost += customer.getBaseTicketCost();
-            totalServiceTax += customer.getServiceTax();
-            totalSwatchBharatTax += customer.getSwatchBharatTax();
-            totalKrishiKalyanTax += customer.getKrishiKalyanTax();
+    public void calculateAndPrintTotalRevenue() {
+        for (Bill bill : Bills) {
+            totalBaseCost += bill.getBaseTicketCost();
+            totalServiceTax += bill.getServiceTax();
+            totalSwatchBharatTax += bill.getSwatchBharatTax();
+            totalKrishiKalyanTax += bill.getKrishiKalyanTax();
         }
+        System.out.println("Total Sales");
+        System.out.println("Revenue: Rs. "+totalBaseCost);
+        System.out.println("Service Tax: Rs. "+totalServiceTax);
+        System.out.println("Swachh Bharat Tax: Rs "+totalSwatchBharatTax);
+        System.out.println("Krishi Kalyan Cess: Rs. "+totalKrishiKalyanTax);
     }
 
-    public void printTotalRevenue() {
-        System.out.println("Total Sales");
-        System.out.println("Revenue: Rs. " + totalBaseCost);
-        System.out.println("Service Tax:Rs. " + totalServiceTax);
-        System.out.println("Swachh Bharat Cess: Rs. " + totalSwatchBharatTax);
-        System.out.println("Krishi Kalyan Cess: Rs. " + totalKrishiKalyanTax);
+    public void printBill(Bill bill) {
+
+        System.out.println("Sub Total: Rs. " + bill.getBaseTicketCost());
+        System.out.println("Service Tax:Rs. " + bill.getServiceTax());
+        System.out.println("Swachh Bharat Cess: Rs. " + bill.getSwatchBharatTax());
+        System.out.println("Krishi Kalyan Cess: Rs. " + bill.getKrishiKalyanTax());
     }
 
     public void initShow() {
@@ -45,7 +51,10 @@ public class Theatre {
     public boolean bookShow(int showNumber, String[] seats) {
         Show show = getShow(showNumber);
         if(show.checkIfSeatsAreAvailable(seats)){
-            show.bookTicket(seats);
+            for(String seat : seats) {
+                show.bookTicket(seat);
+                createAndAddBill(showNumber, seat);
+            }
             return true;
         } else {
             show.printSeatingArrangement();
@@ -74,5 +83,20 @@ public class Theatre {
 
     public Show getShow3() {
         return show3;
+    }
+
+    public void createAndAddBill(int showNumber, String seat) {
+        Bill bill = new Bill(getShow(showNumber));
+        bill.calculateBill(seat);
+        printBill(bill);
+        Bills.add(bill);
+    }
+
+    public void bookTicket() {
+        System.out.println("Enter Show No: ");
+        int showNumber = scanner.nextInt();
+        System.out.println("Enter seats: ");
+        String ticketNumbers = scanner.next();
+        bookShow(showNumber,ticketNumbers.split(","));
     }
 }

@@ -20,16 +20,16 @@ public class Show {
         return SeatingArrangement.initializeSeats(showNumber);
     }
 
-    public void getTicketCost(){
+    public void getTicketCost() {
 
     }
 
     public boolean checkIfSeatsAreAvailable(String[] seats) {
-        for(String seat : seats){
+        for (String seat : seats) {
             int row = getRowFromSeatNumber(seat);
             int column = getColumnFromSeatNumber(seat);
 
-            if(!getAvailableSeatsForShow()[row][column]){
+            if (!getAvailableSeatsForShow()[row][column]) {
                 return false;
             }
         }
@@ -51,16 +51,19 @@ public class Show {
         }
     }
 
-    public void printSeatingArrangement(){
+    public void printSeatingArrangement() {
         System.out.println(
                 printer.returnSeatingArrangement(availableSeatsForShow));
     }
 
-    public void bookTicket(String[] seats) {
-        for(String seat : seats){
-            int row = getRowFromSeatNumber(seat);
-            int column = getColumnFromSeatNumber(seat);
-            getAvailableSeatsForShow()[row][column] = false;
-        }
+    public void bookTicket(String seat) {
+        int row = getRowFromSeatNumber(seat);
+        int column = getColumnFromSeatNumber(seat);
+        getAvailableSeatsForShow()[row][column] = false;
+
+    }
+
+    public int getShowNumber() {
+        return showNumber;
     }
 }
