@@ -18,12 +18,12 @@ public class SeatingArrangementPrinterTest {
     @Test
     public void shouldPrintCorrectSeatingArrangement() throws Exception {
         Boolean[][] seats = show.getAvailableSeatsForShow();
-        System.out.println(printer.printSeatingArrangement(seats));
+        System.out.println(printer.returnSeatingArrangement(seats));
 
         seats = show.getAvailableSeatsForShow();;
-        System.out.println(printer.printSeatingArrangement(seats));
+        System.out.println(printer.returnSeatingArrangement(seats));
 
         seats = show.getAvailableSeatsForShow();
-        System.out.println(printer.printSeatingArrangement(seats));
+        System.out.println(printer.returnSeatingArrangement(seats));
     }
 }

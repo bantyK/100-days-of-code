@@ -23,7 +23,5 @@ public class CostCalculatorTest {
         assertEquals(0,row1);
         assertEquals(1,row2);
         assertEquals(2,row3);
-
-
     }
 }

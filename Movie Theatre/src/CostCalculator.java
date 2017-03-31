@@ -13,8 +13,10 @@ public class CostCalculator {
             //platinum row
             totalCostForTicket += 320;
         } else if (row == 1){
+            //gold row
             totalCostForTicket += 280;
         } else {
+            //silver row
             totalCostForTicket += 240;
         }
 

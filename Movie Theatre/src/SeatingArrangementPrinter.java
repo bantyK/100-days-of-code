@@ -4,7 +4,7 @@
 public class SeatingArrangementPrinter {
     String[] prefixBeforeSeatNumber = {"A", "B", "C"};
 
-       public String printSeatingArrangement(Boolean[][] seats) {
+       public String returnSeatingArrangement(Boolean[][] seats) {
         String seatingArrangement = "";
         for (int row = 0; row < 3; row++) {
             for (int column = 0; column < 9; column++) {
