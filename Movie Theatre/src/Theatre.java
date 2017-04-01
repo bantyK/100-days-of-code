@@ -40,6 +40,7 @@ public class Theatre {
         System.out.println(String.format("Service Tax: Rs. %.2f", bill.getServiceTax()));
         System.out.println(String.format("Swachh Bharat Cess: Rs. %.2f", bill.getSwatchBharatTax()));
         System.out.println(String.format("Krishi Kalyan Cess: Rs. %.2f", bill.getKrishiKalyanTax()));
+        System.out.println(String.format("Total : Rs. %.2f", getTotalBill(bill)));
     }
 
     public void initShow() {
@@ -97,6 +98,12 @@ public class Theatre {
         int showNumber = scanner.nextInt();
         System.out.println("Enter seats: ");
         String ticketNumbers = scanner.next();
-        bookShow(showNumber, ticketNumbers.split(","));
+        if(bookShow(showNumber, ticketNumbers.split(","))){
+            System.out.println("Successfully Booked - Show " + showNumber);
+        }
+    }
+
+    public double getTotalBill(Bill bill) {
+        return bill.getBaseTicketCost() + bill.getServiceTax() + bill.getSwatchBharatTax() + bill.getKrishiKalyanTax();
     }
 }

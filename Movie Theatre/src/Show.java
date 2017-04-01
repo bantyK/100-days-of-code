@@ -30,6 +30,7 @@ public class Show {
             int column = getColumnFromSeatNumber(seat);
 
             if (!getAvailableSeatsForShow()[row][column]) {
+                System.out.println(seat + " Not available, Please select different seats");
                 return false;
             }
         }

@@ -39,7 +39,7 @@ public class Bill {
         serviceTax += baseTicketCost * 0.14;
     }
 
-    private double calculateBaseCost(String seat) {
+    public double calculateBaseCost(String seat) {
         int row = getRowFromSeatNumber(seat);
         baseTicketCost = getBasePriceForRow(row);
         return baseTicketCost;
